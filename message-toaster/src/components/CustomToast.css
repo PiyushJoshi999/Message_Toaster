@@ -1,0 +1,35 @@
+/* CustomToast.css */
+.custom-toast {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    margin-bottom: 10px; /* Add margin between toasts */
+    display: flex;
+    flex-direction: row; /* Display toasts in a row */
+  }
+  
+  .custom-toast.visible {
+    opacity: 1;
+  }
+  
+  .custom-toast.hidden {
+    display: none;
+  }
+  
+  .custom-toast .toast-body-container {
+    padding: 10px; /* Add padding to the toast body container */
+  }
+  
+  .custom-toast .toast-body {
+    /* Add any additional styling for the toast message */
+    color: black;
+  }
+  
